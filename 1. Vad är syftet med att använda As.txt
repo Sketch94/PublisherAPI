@@ -1,0 +1,39 @@
+1. Vad är syftet med att använda AsNoTracking i Entity Framework Core och hur påverkar det prestandan?
+
+För att förbättra prestanda genom att undvika spårning av objekten.
+
+2. Hur fungerar Dependency Injection (DI) i ASP.NET Core och varför är det viktigt för att hantera DbContext?
+
+DI injicerar beroenden som DbContext, vilket gör koden mer flexibel och testbar.
+
+3. Vad är skillnaden mellan synkrona och asynkrona metoder i en webapplikation, och varför använde vi asynkrona metoder i våra endpoints?
+
+Asynkrona metoder gör att koden fortsätter med andra kodrader för att förbättra prestandan.
+
+4. Hur konfigurerar vi en databasanslutning i appsettings.json och hur används den i Program.cs?
+
+Anslutningen definieras i appsettings.json och registreras med AddDbContext() i Program.cs.
+
+5. Vad är fördelen med att använda Include-metoden när vi hämtar data med relationer i Entity Framework Core?
+
+Hämtar alla relaterade entiteter i en enda fråga och ökar prestandan.
+
+6. Hur kan vi hantera cyclic data problem när vi serialiserar objekt med relationer i JSON?
+
+Genom att använda ReferenceHandler.IgnoreCycles för att undvika oändliga loopar (som vi fick med Author.Books.)
+
+7. Vad är syftet med att använda ReferenceHandler.IgnoreCycles i JSON-serialisering och hur påverkar det resultatet?
+
+Förhindrar cykliska relationer och undviker oändliga loopar vid serialisering.
+
+8. Hur kan vi använda Swagger för att testa våra API-endpoints och vad är fördelarna med detta verktyg?
+
+Swagger dokumenterar och gör det lättare att testa och förstå API:er.
+
+9. Vad är skillnaden mellan att använda MapGet direkt i Program.cs och att ha logiken i separata klasser?
+
+Logik i separata klasser gör koden mer modulär, testbar och återanvändbar.
+
+10. Hur kan vi uppdatera paketversioner i .csproj-filen och varför är det viktigt att hålla dem uppdaterade?
+
+Uppdatera versioner i .csproj för att förbättra prestanda och säkerhet.
